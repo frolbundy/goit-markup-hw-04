@@ -3,6 +3,7 @@
   --title-text-color: #2e2f42;
   --accent-baccolor-btn: #404bbf;
   --accent-color-btn: #ffffff;
+  --bgmain: linear-gradient(rgba(46, 47, 66, 0.7));
 }
 
 body {
@@ -30,7 +31,6 @@ img {
 
 button {
   cursor: pointer;
- 
 }
 
 .list {
@@ -56,7 +56,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  /*outline: 2px solid tomato;*/
+  outline: 2px solid tomato;
 }
 
 /*---------------хедер---------------*/
@@ -146,9 +146,22 @@ button {
 
 /*---------------секція-1---------------*/
 .main {
-  background: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peope-officebg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
@@ -263,7 +276,9 @@ button {
 .doing-item {
   width: calc((100% - 48px) / 3);
 }
+
 /*---------------секція-4---------------*/
+
 .team {
   background: #f4f4fd;
 
@@ -299,6 +314,8 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #434455;
+
+  margin-bottom: 8px;
 }
 
 .conteiner-team {
@@ -322,6 +339,76 @@ button {
   width: calc((100% - 72px) / 4);
 }
 
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.team-soc-icon {
+  fill: #ffffff;
+}
+
+.team-soc-icon:is(:hover, :focus) {
+}
+
+/*---------------секція-5---------------*/
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  margin-bottom: 72px;
+}
+
+.customer-conteiner-list{
+  display: flex;
+  gap: 24px;
+}
+
+.customer-conteiner-item{
+  width: 168px;
+  height: 88px;
+}
+
+.customer-icon{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-icon{
+    fill: #8e8f99;
+}
+
 /*---------------футер---------------*/
 
 .footer {
@@ -329,6 +416,32 @@ button {
 
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.conteiner-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-soc-conteiner {
+  margin-left: 120px;
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+
+}
+
+.text-soc {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .logotype-footer {
@@ -365,6 +478,28 @@ button {
   color: #4d5ae5;
 }
 
+.footer-soc-item{
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  width: 100%;
+  height: 100%;
+
+  padding: 8px;
+  gap: 16px;
+}
+
+.team-soc-icon{
+  fill: #F4F4FD;
+}
 /*===========partfolio.html===========*/
 
 .hero {
