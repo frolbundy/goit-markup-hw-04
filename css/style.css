@@ -56,7 +56,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /*outline: 2px solid tomato;*/
 }
 
 /*---------------хедер---------------*/
@@ -80,6 +80,7 @@ button {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logotype {
@@ -221,6 +222,28 @@ button {
   margin: -1px;
 }
 
+.about-list{
+  display: flex;
+  gap: 24px;
+}
+
+.about-item{
+  width: calc((100%-72px)/4);
+}
+
+.conteiner-about-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: #F4F4FD;
+  border-radius: 4px;
+
+  margin-bottom: 8px;
+}
+
+
 .about-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -235,15 +258,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--about-text-color);
-}
-
-.about-list {
-  display: flex;
-  gap: 24px;
-}
-
-.about-item {
-  width: calc((100% - 72px) / 4);
 }
 
 /*---------------секція-3---------------*/
@@ -359,13 +373,15 @@ button {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  color: var(--accent-baccolor-btn);
 }
 
 .team-soc-icon {
   fill: #ffffff;
 }
 
-.team-soc-icon:is(:hover, :focus) {
+.team-social-link:is(:hover, :focus) {
+  background-color: var(--accent-baccolor-btn);
 }
 
 /*---------------секція-5---------------*/
@@ -385,29 +401,33 @@ button {
   margin-bottom: 72px;
 }
 
-.customer-conteiner-list{
+.customers-list {
   display: flex;
   gap: 24px;
 }
 
-.customer-conteiner-item{
+.customers-item {
   width: 168px;
   height: 88px;
 }
 
-.customer-icon{
+.customers-link {
   width: 100%;
   height: 100%;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: #8e8f99;
+}
+.customers-icon {
+  fill: currentColor;
 }
 
-.customer-icon{
-    fill: #8e8f99;
+.customers-link:is(:hover, :focus) {
+  border-color: var(--accent-baccolor-btn);
+  color: var(--accent-baccolor-btn);
 }
 
 /*---------------футер---------------*/
@@ -432,7 +452,6 @@ button {
   display: flex;
   align-items: baseline;
   gap: 16px;
-
 }
 
 .text-soc {
@@ -479,12 +498,12 @@ button {
   color: #4d5ae5;
 }
 
-.footer-soc-item{
+.footer-soc-item {
   width: 40px;
   height: 40px;
 }
 
-.footer-soc-link{
+.footer-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -498,9 +517,14 @@ button {
   gap: 16px;
 }
 
-.team-soc-icon{
-  fill: #F4F4FD;
+.footer-soc-icon {
+  fill: #f4f4fd;
 }
+
+.footer-soc-link:is(:hover, :focus){
+  background-color: #31D0AA;
+}
+
 /*===========partfolio.html===========*/
 
 .hero {
@@ -569,13 +593,12 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .image-item {
   margin: 24px 12px 24px 12px;
   width: calc((100% - 72px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .conteiner-image-content {
@@ -587,6 +610,4 @@ button {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container-img {
-  padding-bottom: 120px;
-}
+
